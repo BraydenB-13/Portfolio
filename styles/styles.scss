@@ -13,7 +13,7 @@ body {
     margin: 0;
     font-family: $font;
     .navbar {
-        height: 75px;
+        height: 15vh;
         display: flex;
         align-items: center;
         background-color: $primary-color;
@@ -41,7 +41,7 @@ body {
         }
     }
     .image-section {
-        height: calc(100vh - 75px);
+        height: 85vh;
         width: 100vw;
         background: url("../images/tetons.jpg") no-repeat center;
         background-size: cover;
@@ -53,7 +53,7 @@ body {
         color: $primary-color;
     }
     .portfolio-header, .social-header, .about-me-header {
-        height: 75px;
+        height: 15vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -131,7 +131,7 @@ body {
             }
         }
         .foot-links {
-            padding: 0px 300px 0px 300px;
+            padding: 0 35vw;
             display: flex;
             justify-content: space-around;
             .portfolio-link:hover, .social-link:hover, .about-me-link:hover {

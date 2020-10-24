@@ -8,7 +8,7 @@ body {
 }
 
 body .navbar {
-  height: 75px;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +57,7 @@ body .navbar .right a {
 }
 
 body .image-section {
-  height: calc(100vh - 75px);
+  height: 85vh;
   width: 100vw;
   background: url("../images/tetons.jpg") no-repeat center;
   background-size: cover;
@@ -76,7 +76,7 @@ body .image-section {
 }
 
 body .portfolio-header, body .social-header, body .about-me-header {
-  height: 75px;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +202,7 @@ body .foot .name-link h1:hover {
 }
 
 body .foot .foot-links {
-  padding: 0px 300px 0px 300px;
+  padding: 0 35vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
