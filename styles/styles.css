@@ -1,0 +1,185 @@
+body {
+  margin: 0;
+  font-family: "Staatliches", cursive;
+}
+
+body .navbar {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #102230;
+}
+
+body .navbar .left {
+  width: 55vw;
+  padding-left: 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 30px;
+  color: #e76952;
+}
+
+body .navbar .right {
+  width: 35vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+}
+
+body .image-section {
+  height: calc(100vh - 75px);
+  width: 100vw;
+  background: url("../images/tetons.jpg") no-repeat center;
+  background-size: cover;
+  font-size: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Staatliches", cursive;
+  color: #102230;
+}
+
+body .portfolio-header, body .social-header, body .about-me-header {
+  height: 75px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 30px;
+  color: #e76952;
+  background-color: #102230;
+}
+
+body .portfolio-section {
+  padding: 15px 0px;
+}
+
+body .portfolio-section .row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .portfolio-section .row1 img {
+  border: #102230 solid;
+  height: 200px;
+  width: 375px;
+}
+
+body .portfolio-section .row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 10px;
+}
+
+body .portfolio-section .row2 img {
+  border: #102230 solid;
+  height: 200px;
+  width: 375px;
+}
+
+body .social-section {
+  padding: 5px 0px 30px 0px;
+}
+
+body .social-section h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: underline;
+}
+
+body .social-section .row3, body .social-section .row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .social-section .row3 .fab, body .social-section .row3 .fas, body .social-section .row4 .fab, body .social-section .row4 .fas {
+  font-size: 2em;
+}
+
+body .about-me-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .about-me-section .image {
+  padding: 25px;
+}
+
+body .about-me-section .image .me {
+  height: 300px;
+  width: 250px;
+  border: #102230 solid;
+}
+
+body .about-me-section p {
+  font-size: 25px;
+}
+
+body .foot {
+  height: 125px;
+  background-color: #102230;
+  color: #e76952;
+}
+
+body .foot h2 {
+  padding-top: 10px;
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .foot .foot-links {
+  padding: 0px 300px 10px 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body a {
+  text-decoration: none;
+  color: #e76952;
+}
+/*# sourceMappingURL=styles.css.map */

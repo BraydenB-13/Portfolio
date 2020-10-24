@@ -1,0 +1,124 @@
+$primary-color: #102230;
+$secondary-color: #e76952;
+$tertiary-color: #478094;
+$black: black;
+$white: white;
+$font: 'Staatliches', cursive;
+
+body {
+    margin: 0;
+    font-family: $font;
+    .navbar {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        background-color: $primary-color;
+        .left {
+            width: 55vw;
+            padding-left: 5vw;
+            display: flex;
+            font-size: 30px;
+            color: $secondary-color;
+        }
+        .right {
+            width: 35vw;
+            display: flex;
+            justify-content: flex-end;
+            justify-content: space-between;
+            font-size: 20px;
+        }
+    }
+    .image-section {
+        height: calc(100vh - 75px);
+        width: 100vw;
+        background: url("../images/tetons.jpg") no-repeat center;
+        background-size: cover;
+        font-size: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font;
+        color: $primary-color;
+    }
+    .portfolio-header, .social-header, .about-me-header {
+        height: 75px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: $secondary-color;
+        background-color: $primary-color;
+    }
+    .portfolio-section {
+        padding: 15px 0px;
+        .row1 {
+            display: flex;
+            justify-content: space-around;
+            img {
+                border: $primary-color solid;
+                height: 200px;
+                width: 375px;
+            }
+        }   
+        .row2 {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 10px;
+            img {
+                border: $primary-color solid;
+                height: 200px;
+                width: 375px;
+            }
+        }
+    }
+    .social-section {
+        padding: 5px 0px 30px 0px;
+        h1 {
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+        }
+        .row3, .row4 {
+            display: flex;
+            justify-content: space-around;
+            .fab, .fas {
+                font-size: 2em;
+            }
+        }
+    }
+    .about-me-section {
+        display: flex;
+        .image {
+            padding: 25px;
+            .me {
+                height: 300px;
+                width: 250px;
+                border: $primary-color solid;
+            }
+        }
+        p {
+            font-size: 25px;
+        }
+    }
+    .foot {
+        height: 125px;
+        background-color: $primary-color;
+        color: $secondary-color;
+        h2 {
+            padding-top: 10px;;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+        }
+        .foot-links {
+            padding: 0px 300px 10px 300px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+    }
+    a {
+        text-decoration: none;
+        color: $secondary-color;;
+    }
+}
