@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Staatliches", cursive;
@@ -36,6 +40,20 @@ body .navbar .right {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 20px;
+}
+
+body .navbar .right .portfolio-link:hover, body .navbar .right .social-link:hover, body .navbar .right .about-me-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+body .navbar .right a {
+  text-decoration: none;
+  color: #e76952;
 }
 
 body .image-section {
@@ -85,12 +103,6 @@ body .portfolio-section .row1 {
       justify-content: space-around;
 }
 
-body .portfolio-section .row1 img {
-  border: #102230 solid;
-  height: 200px;
-  width: 375px;
-}
-
 body .portfolio-section .row2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -100,27 +112,19 @@ body .portfolio-section .row2 {
   padding-top: 10px;
 }
 
-body .portfolio-section .row2 img {
+body .portfolio-section img {
   border: #102230 solid;
   height: 200px;
   width: 375px;
 }
 
+body .portfolio-section img:hover {
+  opacity: .15;
+}
+
 body .social-section {
-  padding: 5px 0px 30px 0px;
-}
-
-body .social-section h1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-decoration: underline;
-}
-
-body .social-section .row3, body .social-section .row4 {
+  padding: 30px 0px;
+  color: #102230;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,21 +132,36 @@ body .social-section .row3, body .social-section .row4 {
       justify-content: space-around;
 }
 
-body .social-section .row3 .fab, body .social-section .row3 .fas, body .social-section .row4 .fab, body .social-section .row4 .fas {
-  font-size: 2em;
+body .social-section .i1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .social-section .github:hover, body .social-section .linkdin:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+body .social-section a {
+  color: #102230;
+  text-decoration: none;
 }
 
 body .about-me-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 25px 25px 25px 25px;
 }
 
-body .about-me-section .image {
-  padding: 25px;
-}
-
-body .about-me-section .image .me {
+body .about-me-section .me {
   height: 300px;
   width: 250px;
   border: #102230 solid;
@@ -150,6 +169,7 @@ body .about-me-section .image .me {
 
 body .about-me-section p {
   font-size: 25px;
+  padding: 0px 50px;
 }
 
 body .foot {
@@ -158,9 +178,8 @@ body .foot {
   color: #e76952;
 }
 
-body .foot h2 {
+body .foot .name-link {
   padding-top: 10px;
-  font-size: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -169,8 +188,21 @@ body .foot h2 {
           justify-content: center;
 }
 
+body .foot .name-link h1 {
+  font-size: 30px;
+}
+
+body .foot .name-link h1:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
 body .foot .foot-links {
-  padding: 0px 300px 10px 300px;
+  padding: 0px 300px 0px 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -178,7 +210,16 @@ body .foot .foot-links {
       justify-content: space-around;
 }
 
-body a {
+body .foot .foot-links .portfolio-link:hover, body .foot .foot-links .social-link:hover, body .foot .foot-links .about-me-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+
+body .foot a {
   text-decoration: none;
   color: #e76952;
 }

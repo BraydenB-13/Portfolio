@@ -5,6 +5,10 @@ $black: black;
 $white: white;
 $font: 'Staatliches', cursive;
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: $font;
@@ -26,6 +30,14 @@ body {
             justify-content: flex-end;
             justify-content: space-between;
             font-size: 20px;
+            .portfolio-link:hover, .social-link:hover, .about-me-link:hover {
+                transform: scale(1.1);
+                transition: transform 300ms ease-in-out;
+            }
+            a {
+                text-decoration: none;
+                color: $secondary-color;
+            }
         }
     }
     .image-section {
@@ -54,71 +66,82 @@ body {
         .row1 {
             display: flex;
             justify-content: space-around;
-            img {
-                border: $primary-color solid;
-                height: 200px;
-                width: 375px;
-            }
         }   
         .row2 {
             display: flex;
             justify-content: space-around;
             padding-top: 10px;
-            img {
-                border: $primary-color solid;
-                height: 200px;
-                width: 375px;
-            }
+            //images from 1500 wide 800 high
         }
+        img {
+            border: $primary-color solid;
+            height: 200px;
+            width: 375px;
+        }
+        img:hover {
+            opacity: .15;
+        }
+
     }
     .social-section {
-        padding: 5px 0px 30px 0px;
-        h1 {
-            display: flex;
-            justify-content: center;
-            text-decoration: underline;
-        }
-        .row3, .row4 {
+        padding: 30px 0px;
+        color: $primary-color;
+        display: flex;
+        justify-content: space-around;
+        .i1 {
             display: flex;
             justify-content: space-around;
-            .fab, .fas {
-                font-size: 2em;
-            }
+        }
+        .github:hover, .linkdin:hover {
+            transform: scale(1.1);
+            transition: transform 300ms ease-in-out;
+        }
+        a {
+            color: $primary-color;
+            text-decoration: none;
         }
     }
     .about-me-section {
         display: flex;
-        .image {
-            padding: 25px;
-            .me {
-                height: 300px;
-                width: 250px;
-                border: $primary-color solid;
-            }
+        padding: 25px 25px 25px 25px;
+        .me {
+            height: 300px;
+            width: 250px;
+            border: $primary-color solid;
         }
         p {
             font-size: 25px;
+            padding: 0px 50px;
         }
     }
     .foot {
         height: 125px;
         background-color: $primary-color;
         color: $secondary-color;
-        h2 {
+        .name-link {
             padding-top: 10px;;
-            font-size: 30px;
             display: flex;
             justify-content: center;
+            h1 {
+                font-size: 30px;
+            }
+            h1:hover {
+                transform: scale(1.03);
+                transition: transform 300ms ease-in-out;
+            }
         }
         .foot-links {
-            padding: 0px 300px 10px 300px;
+            padding: 0px 300px 0px 300px;
             display: flex;
             justify-content: space-around;
+            .portfolio-link:hover, .social-link:hover, .about-me-link:hover {
+                transform: scale(1.1);
+                transition: transform 300ms ease-in-out;
+            }
         }
-
-    }
-    a {
-        text-decoration: none;
-        color: $secondary-color;;
+        a {
+            text-decoration: none;
+            color: $secondary-color;
+        }
     }
 }
