@@ -4,6 +4,7 @@ $tertiary-color: #478094;
 $black: black;
 $white: white;
 $font: 'Staatliches', cursive;
+$title-font: 'Pacifico', cursive;
 
 html {
     scroll-behavior: smooth;
@@ -49,7 +50,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: $font;
+        font-family: $title-font;
         color: $primary-color;
     }
     .portfolio-header, .social-header, .about-me-header {
