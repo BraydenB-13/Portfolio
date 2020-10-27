@@ -109,7 +109,7 @@ body .portfolio-section .row2 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 10px;
+  padding-top: 3vh;
 }
 
 body .portfolio-section img {
